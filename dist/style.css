@@ -84,6 +84,10 @@ main {
     background-color: lightyellow;
 }
 
+.menu .item p{
+    font-size: 20px;
+}
+
 .menu img {
     width: 250px;
     height: 250px;
