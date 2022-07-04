@@ -1,0 +1,124 @@
+/* css reset */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* header */
+
+header {
+    height: 10vh;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: lightsalmon;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+header button {
+    font-family: inherit;
+    color: inherit;
+    cursor: pointer;
+    border-style: none;
+    outline: none;
+    width: 100px;
+    font-size: 30px;
+}
+
+header button.active {
+    background-color: lightyellow;
+}
+
+/* main */
+
+main {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80vh;
+}
+
+/* home */
+.home {
+    font-size: 30px;
+    text-align: center;
+    background-color: lightgray;
+    padding: 10px;
+}
+
+/* menu */
+
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.menu .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    margin: 5px;
+    background-color: lightgray;
+}
+
+.menu .item:hover {
+    background-color: lightyellow;
+}
+
+.menu img {
+    width: 250px;
+    height: 250px;
+}
+
+/* contact */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.contact img {
+    width: 800px;
+}
+
+
+
+/* footer */
+
+footer {
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+    font-size: large;
+    flex-shrink: 0;
+}
+
+footer a {
+    font-size: large;
+    text-decoration: none;
+}
